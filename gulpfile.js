@@ -3,7 +3,7 @@ var gulp = require( 'gulp' ),
     uglify = require( 'gulp-uglify' ),
     rename = require( 'gulp-rename' ),
     source = require('vinyl-source-stream'),
-    watchify = require('watchify'),
+    // watchify = require('watchify'),
     browserify = require('browserify'),
     gbrowserify = require( 'gulp-browserify' );
 

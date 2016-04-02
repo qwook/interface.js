@@ -2692,8 +2692,14 @@ Interface.XY = function() {
     },
     mouseup   : function(e) {
       if(this.activeTouch !== null) {
-        this.activeTouch.vx = this.activeTouch.velocity.x;
-        this.activeTouch.vy = this.activeTouch.velocity.y;
+        console.log(this.activeTouch);
+        // if (this.activeTouch.velocity) {
+          // this.activeTouch.vx = this.activeTouch.velocity.x;
+          // this.activeTouch.vy = this.activeTouch.velocity.y;
+        // } else {
+          this.activeTouch.vx = 0;
+          this.activeTouch.vy = 0;
+        // }
         this.activeTouch.lastTouch = null;
         this.activeTouch = null;
       }
